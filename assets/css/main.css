@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -37,6 +37,11 @@ ol, ul {
 	list-style: none;
 }
 
+p
+{
+	color: white;
+	font-size: 1.5em;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -1182,6 +1187,7 @@ input, select, textarea {
 
 	header {
 		margin-bottom: 1em;
+		
 	}
 
 		header p {
@@ -1192,6 +1198,7 @@ input, select, textarea {
 
 	footer {
 		margin-top: 2em;
+		background-image: url("/images/pleca.svg")
 	}
 
 /* Table */
@@ -1832,7 +1839,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: #13322b;
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -1845,6 +1852,7 @@ input, select, textarea {
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
+			color: #b38e5d;
 		}
 
 			#header h1 a {
@@ -1930,9 +1938,10 @@ input, select, textarea {
 	}
 
 		.main > .content {
-			width: 45em;
-			max-width: calc(100% - 4em);
+			width: 55em;
+			max-width: calc(100% - 8em);
 			margin: 0 auto;
+			text-align: justify;
 		}
 
 			.main > .content > :last-child {
@@ -2051,7 +2060,7 @@ input, select, textarea {
 			}
 
 		.main.dark {
-			color: #ffffff;
+			color: #b38e5d;
 		}
 
 			.main.dark a {
@@ -2176,9 +2185,10 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #39454b;
+		background: #285C4D;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
+	
 	}
 
 		#footer > * {
@@ -2244,7 +2254,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background-color: #285C4D; /* url("images/overlay.png"), url("../../images/intro.jpg"); */
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2310,3 +2320,5 @@ input, select, textarea {
 			}
 
 		}
+
+	
